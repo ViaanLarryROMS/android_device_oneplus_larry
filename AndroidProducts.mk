@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_larry.mk
+    $(LOCAL_DIR)/mica_larry.mk
 
