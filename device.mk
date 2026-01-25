@@ -71,3 +71,8 @@ $(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(LOCAL_PATH)/touch/
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/oneplus/larry/larry-vendor.mk)
+
+
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    device/oneplus/larry/lineage_framework_matrix.xml
