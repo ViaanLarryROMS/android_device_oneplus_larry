@@ -16,7 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := larry
+PRODUCT_NAME := lineage_larry
 PRODUCT_DEVICE := larry
 PRODUCT_BRAND := oneplus
 PRODUCT_MODEL := CPH2467
