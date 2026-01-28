@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_larry.mk
+    $(LOCAL_DIR)/p404_larry.mk
 
