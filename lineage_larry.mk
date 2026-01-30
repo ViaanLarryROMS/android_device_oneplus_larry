@@ -32,12 +32,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=OP5958L1 \
     SystemName=OP5958L1
 
-# Camera information (multiple sensors supported)
-AXION_CAMERA_REAR_INFO := 108,2,2
-AXION_CAMERA_FRONT_INFO := 16
-
-# Maintainer name (underscores become spaces in the UI)
-AXION_MAINTAINER := Viaan_Thakur
-
-# Processor name (underscores become spaces)
-AXION_PROCESSOR := Qualcomm_Snapdragon_695_5G
+WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
+BUILD_BCR := true
