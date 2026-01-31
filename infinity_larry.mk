@@ -10,13 +10,13 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LineageOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from larry device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_larry
+PRODUCT_NAME := infinity_larry
 PRODUCT_DEVICE := larry
 PRODUCT_BRAND := oneplus
 PRODUCT_MODEL := CPH2467
@@ -32,13 +32,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=OP5958L1 \
     SystemName=OP5958L1
 
-EVO_BUILD_TYPE := Unofficial
-WITH_GMS := false
-BUILD_BCR := true
-TARGET_HAS_UDFPS := false
-TARGET_SUPPORT_BOOT_ANIMATIONS := true
-TARGET_DISABLE_EPPE := true
-TARGET_INCLUDE_ACCORD := true
-TARGET_INCLUDE_VIPERFX := true
-WITH_SU := true
-TARGET_ENABLE_BLUR := true
+INFINITY_MAINTAINER := Viaan_Thakur
+WITH_GAPPS := true
+
+PRODUCT_SYSTEM_PROPERTIES :=
+ro.product.marketname := OnePlus Nord CE 3 Lite 5G / OnePlus Nord N30 5G
+ro.infinity.soc := Qualcomm Snapdragon 695 5G
+ro.infinity.camera := 108MP + 2MP + 2MP + 16MP
