@@ -15,6 +15,22 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from larry device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Disable EPPE
+TARGET_DISABLE_EPPE := true
+
+# Blur
+TARGET_ENABLE_BLUR := true
+
+# Camera information
+AXION_CAMERA_REAR_INFO := 108, 2, 2
+AXION_CAMERA_FRONT_INFO := 16
+
+# Maintainer name
+AXION_MAINTAINER := Viaan_Thaku
+
+# Processor name
+AXION_PROCESSOR := Qualcomm_Snapdragon_695_5G
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_larry
 PRODUCT_DEVICE := larry
@@ -31,7 +47,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OP5958L1 \
     SystemDevice=OP5958L1 \
     SystemName=OP5958L1
-
-WITH_GMS := true
-TARGET_USES_MINI_GAPPS := true
-BUILD_BCR := true
