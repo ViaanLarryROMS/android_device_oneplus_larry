@@ -15,6 +15,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from larry device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Include Dolby Atmos
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # Disable EPPE
 TARGET_DISABLE_EPPE := true
 
@@ -26,7 +29,7 @@ AXION_CAMERA_REAR_INFO := 108, 2, 2
 AXION_CAMERA_FRONT_INFO := 16
 
 # Maintainer name
-AXION_MAINTAINER := Viaan_Thaku
+AXION_MAINTAINER := Ansh_Agnihotri
 
 # Processor name
 AXION_PROCESSOR := Qualcomm_Snapdragon_695_5G
