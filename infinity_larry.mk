@@ -35,8 +35,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 INFINITY_MAINTAINER := Viaan_Thakur
 WITH_GAPPS := true
 
-PRODUCT_SYSTEM_PROPERTIES :=
-ro.product.marketname := OnePlus_Nord_CE_3_Lite_5G_/_OnePlus_Nord_N30_5G
-ro.infinity.soc := Qualcomm_Snapdragon_695_5G
-ro.infinity.camera := 108MP_+_2MP_+_2MP_+_16MP
 
