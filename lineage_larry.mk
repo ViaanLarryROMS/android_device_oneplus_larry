@@ -15,6 +15,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from larry device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # Disable EPPE
 TARGET_DISABLE_EPPE := true
 
