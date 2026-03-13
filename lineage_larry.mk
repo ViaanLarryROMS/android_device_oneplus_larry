@@ -26,7 +26,7 @@ AXION_CAMERA_REAR_INFO := 108, 2, 2
 AXION_CAMERA_FRONT_INFO := 16
 
 # Maintainer name
-AXION_MAINTAINER := Viaan_Thaku
+AXION_MAINTAINER := Viaan_Thakur
 
 # Processor name
 AXION_PROCESSOR := Qualcomm_Snapdragon_695_5G
